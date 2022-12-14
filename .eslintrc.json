@@ -1,0 +1,78 @@
+{
+  "env": {
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+    "plugin:typescript-sort-keys/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "typescript-sort-keys"],
+  "rules": {
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "format": ["camelCase"],
+        "selector": "default"
+      },
+      {
+        "format": ["PascalCase"],
+        "selector": "typeLike"
+      },
+      {
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+        "selector": "variableLike"
+      },
+      {
+        "format": ["camelCase", "snake_case", "PascalCase"],
+        "selector": "property"
+      },
+      {
+        "format": null,
+        "modifiers": ["unused"],
+        "selector": "parameter"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-magic-numbers": [
+      "error",
+      {
+        "enforceConst": true,
+        "ignore": [
+          -1, 0, 1, 2, 3, 4, 8, 10, 16, 100, 128, 200, 201, 204, 256, 301, 302,
+          400, 404, 500, 3000
+        ],
+        "ignoreEnums": true,
+        "ignoreNumericLiteralTypes": true,
+        "ignoreReadonlyClassProperties": true
+      }
+    ],
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_([a-z_]+)?$",
+        "varsIgnorePattern": "^_([a-z_]+)?$"
+      }
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "natural": true
+      }
+    ],
+    "sort-vars": "error"
+  }
+}

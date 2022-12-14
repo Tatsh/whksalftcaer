@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "args": ["-x"],
+      "console": "integratedTerminal",
+      "env": {
+        "_PYTEST_RAISE": "1"
+      },
+      "name": "Pytest",
+      "program": "~/.virtualenvs/${workspaceFolderBasename}/bin/pytest",
+      "request": "launch",
+      "type": "python"
+    },
+    {
+      "console": "integratedTerminal",
+      "name": "test",
+      "request": "launch",
+      "runtimeArgs": ["run", "test"],
+      "runtimeExecutable": "yarn",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ],
+  "version": "0.2.0"
+}

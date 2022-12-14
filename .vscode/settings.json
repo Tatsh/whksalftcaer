@@ -1,0 +1,75 @@
+{
+  "[diff]": {
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false
+  },
+  "[dockerfile]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.insertSpaces": true,
+  "editor.largeFileOptimizations": true,
+  "editor.rulers": [99],
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "eslint.lintTask.enable": true,
+  "files.associations": {
+    "*.json.dist": "json",
+    "*.yaml.dist": "yaml",
+    ".zapierapprc*": "json"
+  },
+  "files.exclude": {
+    "**/*.pyc": true,
+    "**/*.pyo": true,
+    "**/.*~": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/__pycache__": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 79,
+  "importSorter.importStringConfiguration.tabSize": 2,
+  "importSorter.sortConfiguration.importMembers.order": "lowercaseLast",
+  "importSorter.sortConfiguration.importPaths.order": "lowercaseLast",
+  "javascript.autoClosingTags": false,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "problems.showCurrentInStatus": true,
+  "python.defaultInterpreterPath": "~/.virtualenvs/cvs-hello-world/bin/python",
+  "python.formatting.provider": "yapf",
+  "python.linting.flake8Enabled": false,
+  "python.linting.pylintEnabled": true,
+  "shellformat.effectLanguages": [
+    "azcli",
+    "bats",
+    "dotenv",
+    "gitignore",
+    "hosts",
+    "ignore",
+    "jvmoptions",
+    "properties",
+    "shellscript",
+    "spring-boot-properties"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "yaml.format.printWidth": 99
+}
